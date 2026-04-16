@@ -3,31 +3,37 @@ using UnityEngine;
 public class StarItem : MonoBehaviour
 {
     [Header("ตั้งค่าดาว")]
-    public int starValue = 1; // คะแนนที่ได้
-    public float rotationSpeed = 100f; // ความเร็วในการหมุน
+    public int starValue = 1;
+    public float rotationSpeed = 100f;
+
+    [Header("ระบบเสียง")]
+    public AudioClip collectSound; // เพิ่มช่องสำหรับใส่ไฟล์เสียงตอนเก็บ
 
     void Update()
     {
-        // ทำให้ดาวหมุนติ้วๆ ดูน่าเก็บ
+        // ทำให้ดาวหมุน
         transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        // เช็คว่าคนที่มาชนคือผู้เล่นใช่ไหม?
         if (other.CompareTag("Player"))
         {
-            // ส่งคะแนนไปให้ CoinManager (ใช้ระบบนับคะแนนเดิมที่เราเคยสร้างไว้ได้เลย)
+            // --- คำสั่งเล่นเสียงตอนเก็บ ---
+            if (collectSound != null)
+            {
+                // PlayClipAtPoint จะสร้างจุดกำเนิดเสียงทิ้งไว้ตรงนี้ชั่วคราว แม้ตัวดาวจะถูกทำลายไปแล้วก็ตาม
+                AudioSource.PlayClipAtPoint(collectSound, transform.position);
+            }
+            // --------------------------
+
+            // บวกคะแนน
             if (CoinManager.instance != null)
             {
                 CoinManager.instance.AddCoin(starValue);
             }
-            else
-            {
-                Debug.LogWarning("หา CoinManager ไม่เจอ! อย่าลืมวาง CoinManager ไว้ในฉากนะครับ");
-            }
 
-            // เก็บเสร็จแล้ว ทำลายดาวทิ้ง
+            // ทำลายดาวทิ้ง
             Destroy(gameObject);
         }
     }

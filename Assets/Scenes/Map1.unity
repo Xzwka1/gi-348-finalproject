@@ -327,7 +327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4235dab79b19c9d4994e6c89e7f3dca3, type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Grass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -392,7 +392,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 546819606130560851, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1809848300}
   m_SourcePrefab: {fileID: 100100000, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
 --- !u!1 &50632943
 GameObject:
@@ -411,7 +414,7 @@ GameObject:
   - component: {fileID: 50632950}
   m_Layer: 0
   m_Name: Cube (48)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -990,6 +993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: block-grass-low-large (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9534dfc56730f474b897359988c61360, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1042,7 +1049,7 @@ GameObject:
   - component: {fileID: 81704842}
   m_Layer: 0
   m_Name: Cube (49)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1898,6 +1905,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: block-snow-low-long (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b92036ff571bfe448615f97c367493d, type: 3}
+      propertyPath: m_TagString
+      value: Snow
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1905,6 +1916,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8b92036ff571bfe448615f97c367493d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1885882637}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8b92036ff571bfe448615f97c367493d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1885882641}
   m_SourcePrefab: {fileID: 100100000, guid: 8b92036ff571bfe448615f97c367493d, type: 3}
 --- !u!43 &135115625
 Mesh:
@@ -2147,6 +2161,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
       propertyPath: m_Name
       value: platform-overhang (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2494,6 +2512,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: block-snow-low-large
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d2cdcec52ab10af4f8b5d3c6391f38f3, type: 3}
+      propertyPath: m_TagString
+      value: Snow
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2656,7 +2678,7 @@ GameObject:
   - component: {fileID: 162332099}
   m_Layer: 0
   m_Name: Cube (73)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2996,6 +3018,108 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -2.677, z: 90}
+--- !u!1 &166949793 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 546819606130560851, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
+  m_PrefabInstance: {fileID: 809460491}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &166949799
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166949793}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 7425feb8411aa6746bd18439ffe557f1, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.01
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 30
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &185992268 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4235dab79b19c9d4994e6c89e7f3dca3, type: 3}
@@ -3282,7 +3406,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 546819606130560851, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 625825210}
   m_SourcePrefab: {fileID: 100100000, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
 --- !u!1 &210961793 stripped
 GameObject:
@@ -3444,6 +3571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: block-snow-low-long
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b92036ff571bfe448615f97c367493d, type: 3}
+      propertyPath: m_TagString
+      value: Snow
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3516,6 +3647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: platform-overhang (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3540,7 +3675,7 @@ GameObject:
   - component: {fileID: 228665445}
   m_Layer: 0
   m_Name: Cube (80)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3944,6 +4079,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: platform-overhang (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4117,7 +4256,7 @@ GameObject:
   - component: {fileID: 255701271}
   m_Layer: 0
   m_Name: Cube (77)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4531,7 +4670,7 @@ GameObject:
   - component: {fileID: 265238294}
   m_Layer: 0
   m_Name: Cube (41)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5222,7 +5361,7 @@ GameObject:
   - component: {fileID: 316408775}
   m_Layer: 0
   m_Name: Cube (38)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5593,7 +5732,7 @@ GameObject:
   - component: {fileID: 336229245}
   m_Layer: 0
   m_Name: Cube (71)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5996,6 +6135,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
       propertyPath: m_Name
       value: platform-overhang (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6494,6 +6637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: block-grass-low-large (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9534dfc56730f474b897359988c61360, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6795,7 +6942,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4235dab79b19c9d4994e6c89e7f3dca3, type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Grass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6868,6 +7015,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
       propertyPath: m_Name
       value: platform-overhang (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7425,7 +7576,7 @@ GameObject:
   - component: {fileID: 447186248}
   m_Layer: 0
   m_Name: Cube (54)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7853,7 +8004,7 @@ GameObject:
   - component: {fileID: 457164739}
   m_Layer: 0
   m_Name: Cube (82)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8279,7 +8430,7 @@ GameObject:
   - component: {fileID: 477049493}
   m_Layer: 0
   m_Name: Cube (61)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8856,7 +9007,7 @@ GameObject:
   - component: {fileID: 517255315}
   m_Layer: 0
   m_Name: Cube (43)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9275,6 +9426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: block-grass-low-large (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9534dfc56730f474b897359988c61360, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9327,7 +9482,7 @@ GameObject:
   - component: {fileID: 532174971}
   m_Layer: 0
   m_Name: Cube (67)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10093,6 +10248,108 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &565693229 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 546819606130560851, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
+  m_PrefabInstance: {fileID: 1928898222}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &565693235
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565693229}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 7425feb8411aa6746bd18439ffe557f1, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.01
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 15
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &566547699 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9534dfc56730f474b897359988c61360, type: 3}
@@ -10183,6 +10440,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9534dfc56730f474b897359988c61360, type: 3}
       propertyPath: m_Name
       value: block-grass-low-large
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9534dfc56730f474b897359988c61360, type: 3}
+      propertyPath: m_TagString
+      value: Grass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11115,7 +11376,7 @@ GameObject:
   - component: {fileID: 615804744}
   m_Layer: 0
   m_Name: Cube (79)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11472,7 +11733,7 @@ GameObject:
   - component: {fileID: 621250920}
   m_Layer: 0
   m_Name: Cube (42)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11827,6 +12088,108 @@ MonoBehaviour:
   stepDelay: 2
   appearTime: 4
   disappearTime: 2
+--- !u!1 &625825204 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 546819606130560851, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
+  m_PrefabInstance: {fileID: 200745610}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &625825210
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625825204}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 7425feb8411aa6746bd18439ffe557f1, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.01
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &631386883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12079,7 +12442,7 @@ GameObject:
   - component: {fileID: 635799355}
   m_Layer: 0
   m_Name: Cube (39)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12451,7 +12814,7 @@ GameObject:
   - component: {fileID: 640018277}
   m_Layer: 0
   m_Name: Cube (56)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12922,7 +13285,7 @@ GameObject:
   - component: {fileID: 650658044}
   m_Layer: 0
   m_Name: Cube (87)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13367,7 +13730,7 @@ GameObject:
   - component: {fileID: 670349798}
   m_Layer: 0
   m_Name: Cube (63)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14028,6 +14391,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: platform-overhang (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14500,6 +14867,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: block-snow-low-large (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d2cdcec52ab10af4f8b5d3c6391f38f3, type: 3}
+      propertyPath: m_TagString
+      value: Snow
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14757,7 +15128,7 @@ GameObject:
   - component: {fileID: 765117898}
   m_Layer: 0
   m_Name: Cube (40)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15380,7 +15751,7 @@ GameObject:
   - component: {fileID: 796474271}
   m_Layer: 0
   m_Name: Cube (59)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16037,7 +16408,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 546819606130560851, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 166949799}
   m_SourcePrefab: {fileID: 100100000, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
 --- !u!43 &810087512
 Mesh:
@@ -16475,6 +16849,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8b92036ff571bfe448615f97c367493d, type: 3}
       propertyPath: m_Name
       value: block-snow-low-long (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b92036ff571bfe448615f97c367493d, type: 3}
+      propertyPath: m_TagString
+      value: Snow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17090,6 +17468,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d2cdcec52ab10af4f8b5d3c6391f38f3, type: 3}
       propertyPath: m_Name
       value: block-snow-low-large (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d2cdcec52ab10af4f8b5d3c6391f38f3, type: 3}
+      propertyPath: m_TagString
+      value: Snow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18543,7 +18925,7 @@ GameObject:
   - component: {fileID: 918899887}
   m_Layer: 0
   m_Name: Cube (62)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18914,7 +19296,7 @@ GameObject:
   - component: {fileID: 923694832}
   m_Layer: 0
   m_Name: Cube (83)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19270,7 +19652,7 @@ GameObject:
   - component: {fileID: 931507508}
   m_Layer: 0
   m_Name: Cube (86)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19804,7 +20186,7 @@ GameObject:
   - component: {fileID: 959662677}
   m_Layer: 0
   m_Name: Cube (84)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20635,6 +21017,108 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -92.677, z: 0}
+--- !u!1 &974698970 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 546819606130560851, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
+  m_PrefabInstance: {fileID: 1667297446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &974698976
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974698970}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 7425feb8411aa6746bd18439ffe557f1, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.01
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 15
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &980300226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20777,7 +21261,7 @@ GameObject:
   - component: {fileID: 984682768}
   m_Layer: 0
   m_Name: Cube (81)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21416,6 +21900,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: platform-overhang (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21440,7 +21928,7 @@ GameObject:
   - component: {fileID: 1020840028}
   m_Layer: 0
   m_Name: Cube (76)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22222,7 +22710,7 @@ GameObject:
   - component: {fileID: 1088294023}
   m_Layer: 0
   m_Name: Cube (69)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22863,6 +23351,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: block-snow-overhang-corner
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 96e69d355fc61e4469d84342c71193f9, type: 3}
+      propertyPath: m_TagString
+      value: Snow
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23496,6 +23988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: platform-overhang (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23768,7 +24264,7 @@ GameObject:
   - component: {fileID: 1195974119}
   m_Layer: 0
   m_Name: Cube (66)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24370,6 +24866,108 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1 &1222738096 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 546819606130560851, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
+  m_PrefabInstance: {fileID: 8198095623700438373}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1222738102
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222738096}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 7425feb8411aa6746bd18439ffe557f1, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.01
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1225462803
 GameObject:
   m_ObjectHideFlags: 0
@@ -24387,7 +24985,7 @@ GameObject:
   - component: {fileID: 1225462810}
   m_Layer: 0
   m_Name: Cube (58)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24759,7 +25357,7 @@ GameObject:
   - component: {fileID: 1227853580}
   m_Layer: 0
   m_Name: Cube (44)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25451,7 +26049,7 @@ GameObject:
   - component: {fileID: 1260795604}
   m_Layer: 0
   m_Name: Cube (50)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25901,6 +26499,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
       propertyPath: m_Name
       value: platform-overhang (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26515,7 +27117,7 @@ GameObject:
   - component: {fileID: 1308861079}
   m_Layer: 0
   m_Name: Cube (64)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26944,7 +27546,7 @@ GameObject:
   - component: {fileID: 1336163939}
   m_Layer: 0
   m_Name: Cube (45)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27543,6 +28145,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: platform-overhang (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27688,6 +28294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: platform-overhang (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27759,6 +28369,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
       propertyPath: m_Name
       value: platform-overhang
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27865,7 +28479,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: eb5825c354f29714aac6e17e441fe929, type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Grass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28065,6 +28679,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: platform-overhang (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28185,7 +28803,7 @@ GameObject:
   - component: {fileID: 1444009623}
   m_Layer: 0
   m_Name: Cube (74)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28542,7 +29160,7 @@ GameObject:
   - component: {fileID: 1451968416}
   m_Layer: 0
   m_Name: Cube (46)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28961,6 +29579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: platform-overhang (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28986,7 +29608,7 @@ GameObject:
   - component: {fileID: 1496087545}
   m_Layer: 0
   m_Name: Cube (53)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29427,7 +30049,7 @@ GameObject:
   - component: {fileID: 1501638769}
   m_Layer: 0
   m_Name: Cube (57)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29873,6 +30495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: platform-overhang (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29898,7 +30524,7 @@ GameObject:
   - component: {fileID: 1524001991}
   m_Layer: 0
   m_Name: Cube (55)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30374,6 +31000,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: platform-overhang (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30472,6 +31102,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
       propertyPath: m_Name
       value: platform-overhang (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30663,7 +31297,7 @@ GameObject:
   - component: {fileID: 1582431157}
   m_Layer: 0
   m_Name: Cube (47)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31115,7 +31749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4235dab79b19c9d4994e6c89e7f3dca3, type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Grass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31320,7 +31954,7 @@ GameObject:
   - component: {fileID: 1616010572}
   m_Layer: 0
   m_Name: Cube (52)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31871,7 +32505,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 546819606130560851, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 974698976}
   m_SourcePrefab: {fileID: 100100000, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
 --- !u!43 &1672285715
 Mesh:
@@ -32067,7 +32704,7 @@ GameObject:
   - component: {fileID: 1673232640}
   m_Layer: 0
   m_Name: Cube (85)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32471,6 +33108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: block-snow-low-large (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d2cdcec52ab10af4f8b5d3c6391f38f3, type: 3}
+      propertyPath: m_TagString
+      value: Snow
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32576,7 +33217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4235dab79b19c9d4994e6c89e7f3dca3, type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Grass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32672,7 +33313,7 @@ GameObject:
   - component: {fileID: 1692837997}
   m_Layer: 0
   m_Name: Cube (37)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33160,6 +33801,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: block-grass-low-large (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9534dfc56730f474b897359988c61360, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33184,7 +33829,7 @@ GameObject:
   - component: {fileID: 1741416459}
   m_Layer: 0
   m_Name: Cube (78)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33922,6 +34567,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: platform-overhang (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34020,6 +34669,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
       propertyPath: m_Name
       value: platform-overhang (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34155,6 +34808,108 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1813236423067396214, guid: 5e80527d8c10f3b4c933712d00019b43, type: 3}
+--- !u!1 &1809848294 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 546819606130560851, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
+  m_PrefabInstance: {fileID: 40822004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1809848300
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809848294}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 7425feb8411aa6746bd18439ffe557f1, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.01
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 15
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1809902370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34356,6 +35111,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9534dfc56730f474b897359988c61360, type: 3}
       propertyPath: m_Name
       value: block-grass-low-large (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9534dfc56730f474b897359988c61360, type: 3}
+      propertyPath: m_TagString
+      value: Grass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34587,7 +35346,7 @@ GameObject:
   - component: {fileID: 1854082385}
   m_Layer: 0
   m_Name: Cube (70)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34959,7 +35718,7 @@ GameObject:
   - component: {fileID: 1858243863}
   m_Layer: 0
   m_Name: Cube (60)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35704,6 +36463,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2612865819893904022, guid: 8b92036ff571bfe448615f97c367493d, type: 3}
+--- !u!114 &1885882641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885882636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9ff33e67240a948ae0501bf1c93176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerFootsteps
+  stepInterval: 0.4
 --- !u!1 &1886795331 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
@@ -36069,6 +36841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: block-grass-low-large (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9534dfc56730f474b897359988c61360, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36195,6 +36971,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: block-snow-large
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f55eeee006366d44fbebf3cebd34943d, type: 3}
+      propertyPath: m_TagString
+      value: Snow
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36282,10 +37062,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4215499357768528853, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
+      propertyPath: collectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 2ebb515e7c6e0c140a68e97a0090f4ea, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 546819606130560851, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 565693235}
   m_SourcePrefab: {fileID: 100100000, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
 --- !u!1001 &1936486277
 PrefabInstance:
@@ -36350,6 +37137,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
       propertyPath: m_Name
       value: platform-overhang (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34389a5c710c5bb42b0587140a301ce2, type: 3}
+      propertyPath: m_TagString
+      value: Wood
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36964,7 +37755,10 @@ PrefabInstance:
       addedObject: {fileID: 1957470682}
     - targetCorrespondingSourceObject: {fileID: 5352958571798197664, guid: c564c8c0d0cdc45429417f315e9f3e41, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1957470681}
+      addedObject: {fileID: 1957470685}
+    - targetCorrespondingSourceObject: {fileID: 5352958571798197664, guid: c564c8c0d0cdc45429417f315e9f3e41, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1957470684}
   m_SourcePrefab: {fileID: 100100000, guid: c564c8c0d0cdc45429417f315e9f3e41, type: 3}
 --- !u!1 &1957470674 stripped
 GameObject:
@@ -37055,23 +37849,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7e1cfbae5f13d64b9efcc90a2baadb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerRespawn
---- !u!114 &1957470681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957470674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a9ff33e67240a948ae0501bf1c93176, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerFootsteps
-  grassStep: {fileID: 8300000, guid: 50aed360fbea01548a987b376c0cbfae, type: 3}
-  snowStep: {fileID: 0}
-  woodStep: {fileID: 0}
-  stoneStep: {fileID: 0}
-  stepInterval: 0.4
 --- !u!82 &1957470682
 AudioSource:
   m_ObjectHideFlags: 0
@@ -37085,7 +37862,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -37169,6 +37946,41 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1957470684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957470674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9ff33e67240a948ae0501bf1c93176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerFootsteps
+  stepInterval: 0.4
+--- !u!114 &1957470685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957470674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4039ffc98fc436143869db1b932104b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FootstepManager
+  surfaceSounds:
+  - surfaceTag: Grass
+    stepSound: {fileID: 8300000, guid: 225a6fc276054f844a0505d210746d34, type: 3}
+  - surfaceTag: Snow
+    stepSound: {fileID: 8300000, guid: e6a7cb26520844a4caec1daa45badef8, type: 3}
+  - surfaceTag: Wood
+    stepSound: {fileID: 8300000, guid: b4825a71fcce179438be0ad145afecab, type: 3}
+  - surfaceTag: Stone
+    stepSound: {fileID: 8300000, guid: 8b1b3380c65d38e4cb6fc808724e919d, type: 3}
+  defaultSound: {fileID: 0}
 --- !u!1001 &1963041622
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37633,7 +38445,7 @@ GameObject:
   - component: {fileID: 2006596768}
   m_Layer: 0
   m_Name: Cube (75)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37989,7 +38801,7 @@ GameObject:
   - component: {fileID: 2009911540}
   m_Layer: 0
   m_Name: Cube (72)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38576,7 +39388,7 @@ GameObject:
   - component: {fileID: 2034815490}
   m_Layer: 0
   m_Name: Cube (65)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39625,6 +40437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: block-snow-low-large (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d2cdcec52ab10af4f8b5d3c6391f38f3, type: 3}
+      propertyPath: m_TagString
+      value: Snow
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39660,6 +40476,37 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6896433232256404893, guid: d2cdcec52ab10af4f8b5d3c6391f38f3, type: 3}
+--- !u!1 &2107554319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2107554320}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2107554320
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107554319}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.65306, y: 5.50223, z: 37.98487}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &2107626145
 Mesh:
   m_ObjectHideFlags: 0
@@ -40275,10 +41122,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4215499357768528853, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
+      propertyPath: collectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 2ebb515e7c6e0c140a68e97a0090f4ea, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 546819606130560851, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1222738102}
   m_SourcePrefab: {fileID: 100100000, guid: 9cad3339bc7e9e24cbba5dda88877680, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -40450,3 +41304,4 @@ SceneRoots:
   - {fileID: 656895552}
   - {fileID: 1378219694}
   - {fileID: 191176014}
+  - {fileID: 2107554320}

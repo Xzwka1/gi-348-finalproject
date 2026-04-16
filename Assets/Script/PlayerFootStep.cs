@@ -2,76 +2,74 @@ using UnityEngine;
 
 public class PlayerFootsteps : MonoBehaviour
 {
-    [Header("ไฟล์เสียงเดินแต่ละพื้นผิว")]
-    public AudioClip grassStep;
-    public AudioClip snowStep;
-    public AudioClip woodStep;
-    public AudioClip stoneStep;
+    // ลบตัวแปรเสียง 4 อันบนสุดทิ้งไปได้เลยครับ เพราะเราไปฝากไว้ที่ Manager แล้ว!
 
     [Header("ตั้งค่าการก้าวเดิน")]
-    public float stepInterval = 0.4f; // ระยะเวลาต่อ 1 ก้าว (ปรับให้ตรงกับความเร็วการเดิน)
+    public float stepInterval = 0.4f;
     private float stepTimer;
-
     private AudioSource audioSource;
-    private Rigidbody rb; // ใช้สำหรับเช็คว่าตัวละครกำลังขยับอยู่ไหม
+    private bool wasGrounded = true;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
     {
-        // เช็คว่าผู้เล่นกำลังเคลื่อนที่อยู่หรือไม่ (ความเร็วมากกว่า 0.1)
-        bool isMoving = rb != null && rb.linearVelocity.magnitude > 0.1f;
+        // (โค้ดใน Update ใช้ของเดิมเป๊ะๆ เลยครับ ไม่ต้องแก้)
+        float moveX = Input.GetAxis("Horizontal");
+        float moveZ = Input.GetAxis("Vertical");
+        bool isPressingMove = Mathf.Abs(moveX) > 0.1f || Mathf.Abs(moveZ) > 0.1f;
+        bool isGrounded = Physics.Raycast(transform.position + Vector3.up * 0.1f, Vector3.down, 0.3f);
 
-        if (isMoving)
+        if (!wasGrounded && isGrounded)
+        {
+            PlayFootstepSound();
+        }
+
+        if (isPressingMove && isGrounded)
         {
             stepTimer -= Time.deltaTime;
-            // ถ้าเวลานับถอยหลังถึง 0 ให้เล่นเสียง 1 ครั้ง
             if (stepTimer <= 0f)
             {
                 PlayFootstepSound();
-                stepTimer = stepInterval; // รีเซ็ตเวลานับใหม่
+                stepTimer = stepInterval;
             }
         }
         else
         {
-            // ถ้าหยุดเดิน ให้รีเซ็ตเวลาเป็น 0 พอเริ่มเดินใหม่จะได้มีเสียงทันที
             stepTimer = 0f;
         }
+
+        wasGrounded = isGrounded;
     }
 
     void PlayFootstepSound()
     {
-        // ยิงเลเซอร์ (Raycast) ลงไปใต้เท้าเพื่อดูว่าเหยียบพื้นอะไรอยู่
+        Vector3 rayStart = transform.position + (Vector3.up * 0.5f);
         RaycastHit hit;
-        // ระยะ 1.5f อาจจะต้องปรับเพิ่ม/ลด ขึ้นอยู่กับความสูงของตัวละครคุณ
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 1.5f))
+
+        if (Physics.Raycast(rayStart, Vector3.down, out hit, 1.5f))
         {
             string groundTag = hit.collider.tag;
 
-            // เลือกเล่นเสียงตาม Tag ของพื้น
-            switch (groundTag)
+            // --- ความฉลาดอยู่ตรงนี้! ---
+            // เดินไปบอก FootstepManager ว่า "ขอเสียงของ Tag นี้หน่อย!"
+            if (FootstepManager.instance != null)
             {
-                case "Grass":
-                    audioSource.PlayOneShot(grassStep);
-                    break;
-                case "Snow":
-                    audioSource.PlayOneShot(snowStep);
-                    break;
-                case "Wood":
-                    audioSource.PlayOneShot(woodStep);
-                    break;
-                case "Stone":
-                    audioSource.PlayOneShot(stoneStep);
-                    break;
-                default:
-                    // ถ้าพื้นไม่มี Tag เลย หรือเป็นชื่ออื่น ให้ใช้เสียงหินเป็นเสียงพื้นฐาน
-                    audioSource.PlayOneShot(stoneStep);
-                    break;
+                AudioClip soundToPlay = FootstepManager.instance.GetSoundForSurface(groundTag);
+                PlayClip(soundToPlay);
             }
+            // ------------------------
+        }
+    }
+
+    void PlayClip(AudioClip clip)
+    {
+        if (clip != null)
+        {
+            audioSource.PlayOneShot(clip);
         }
     }
 }
