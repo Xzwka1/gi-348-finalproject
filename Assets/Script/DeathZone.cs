@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class DeathZone : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.CompareTag("Player"))
+        {
+            // ถ้าผู้เล่นตกลงมาโดนกล่องนี้ ให้เรียกฟังก์ชัน Respawn ให้วาร์ปกลับไปจุดเซฟ
+            PlayerRespawn playerRespawn = other.GetComponent<PlayerRespawn>();
+            if (playerRespawn != null)
+            {
+                playerRespawn.Respawn();
+            }
+        }
     }
 }
