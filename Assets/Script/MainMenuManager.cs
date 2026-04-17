@@ -1,21 +1,31 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement; // ⚠️ ต้องมีบรรทัดนี้ เพื่อให้สลับฉากได้
+using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
-    // ฟังก์ชันนี้จะถูกเรียกตอนกดปุ่ม Start
+    // เพิ่มฟังก์ชัน Start นี้เข้าไปครับ (มันจะทำงานอัตโนมัติทันทีที่หน้าเมนูเปิดขึ้นมา)
+    void Start()
+    {
+        // 1. ปลดล็อกเมาส์ให้ขยับไปมาบนหน้าจอได้
+        Cursor.lockState = CursorLockMode.None;
+
+        // 2. สั่งให้โชว์ลูกศรเมาส์ขึ้นมา
+        Cursor.visible = true;
+
+        // 3. กันเหนียว เผื่อเวลาในเกมยังโดนหยุดอยู่
+        Time.timeScale = 1f;
+    }
+
     public void PlayGame()
     {
         Time.timeScale = 1f;
         Debug.Log("กำลังโหลดเข้าเกม...");
-        // ให้ใส่ชื่อ Scene เกมของคุณลงไปในวงเล็บ (ต้องสะกดให้ตรงเป๊ะ!)
-        SceneManager.LoadScene("Map1"); // สมมติว่าฉากเกมชื่อ Map1
+        SceneManager.LoadScene("Map1"); // ชื่อ Scene ด่านของคุณ
     }
 
-    // ฟังก์ชันนี้จะถูกเรียกตอนกดปุ่ม Exit
     public void QuitGame()
     {
-        Debug.Log("ออกจากเกมแล้ว!"); // เอาไว้เช็คใน Editor
-        Application.Quit(); // คำสั่งปิดโปรแกรมเกม (ทำงานจริงตอนแพคเกมเป็น .exe แล้ว)
+        Debug.Log("ออกจากเกมแล้ว!");
+        Application.Quit();
     }
 }
